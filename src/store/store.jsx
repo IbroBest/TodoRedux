@@ -13,4 +13,5 @@ const store = creareStore(
     reducer,
     initialState,
     applymiddleware(...middleware)
+    
 )
