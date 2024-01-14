@@ -9,7 +9,7 @@ const initialState = {}
 
 const middleware = [thunk];
 
-const store = creareStore(
+export const store = creareStore(
     reducer,
     initialState,
     applymiddleware(...middleware)
