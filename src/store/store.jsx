@@ -1,4 +1,4 @@
-import {createStore,mobilereducers,applymiddleware}from 'redux'
+import {mobilereducers,applymiddleware}from 'redux'
 import thunk from 'thunk'
 
 const reducer  =  mobilereducers({
