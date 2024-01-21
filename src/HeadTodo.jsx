@@ -9,14 +9,15 @@ export const HeadTodo = () => {
     setInputVal(event.target.value);
   };
   const handleVal = () => {
-     setData([...data , { id: data.length + 1 , input: inputVal }
+     setData([...data , { id: data.length + 1 , input: inputVal }])
+      setInputVal('')
     
-    ]);
+  
   };
   return (
     <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
       <Box display={"flex"} gap={"10px"}>
-        <Input onChange={infarmation} w={"400px"} />
+        <Input onChange={infarmation} w={"400px"} value={inputVal}/>
         <Button onClick={handleVal} colorScheme="green">
           Add
         </Button>
